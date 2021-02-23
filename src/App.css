@@ -2,31 +2,13 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-/* .app {
+.app {
   height: 100vh;
   background-color: black;
   display: grid;
   place-items: center;
 }
 
-.app__videos {
-  position: relative;
-  height: 800px;
-  border-radius: 20px;
-  overflow: scroll;
-  width: 80%;
-  max-width: 500px;
-  scroll-snap-type: y mandatory;
-} */
-
-.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Fallback */
-  height: calc(var(--vh, 1vh) * 100);
-}
- 
 .app__videos {
   position: relative;
   height: 800px;
@@ -44,6 +26,6 @@ html {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .app__videos {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
